@@ -15,6 +15,18 @@ trait ResponseTrait
             'errors' => null,
             'data' => $data,
             'timeInfo' => $timeInfo
-        ]);
+        ], $statusCode);
+    }
+
+    public static function error(int $statusCode, string $message, string $timeInfo): JsonResponse
+    {
+        return response()->json([
+            'success' => false,
+            'statusCode' => $statusCode,
+            'message' => $message,
+            'errors' => null,
+            'data' => null,
+            'timeInfo' => $timeInfo
+        ], $statusCode);
     }
 }
