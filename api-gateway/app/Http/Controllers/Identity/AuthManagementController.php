@@ -8,7 +8,6 @@ use App\Services\Auth\AuthenticationManagementService;
 use App\Traits\ResponseTrait;
 use Carbon\Carbon;
 use DomainException;
-use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class AuthManagementController extends Controller

@@ -19,7 +19,7 @@ class AuthenticationManagementService extends ProxyServerConnectionManagementSer
     public function register(string $email)
     {
         try {
-            return $this->send($this->http()->post('api/v1/register', $email));
+            return $this->send($this->http()->post('/register', $email));
         } catch (DomainException $th) {
             $this->logError($th->getMessage(), $th);
             throw $th;

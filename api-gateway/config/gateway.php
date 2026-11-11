@@ -6,9 +6,7 @@ return [
 
     'services' => [
         'identity'  => env('IDENTITY_SERVICE_URL'),
-        'catalog'   => env('CATALOG_SERVICE_URL'),
-        'channels'  => env('CHANNEL_SERVICE_URL'),
-        'inventory' => env('INVENTORY_SERVICE_URL'),
-        'orders'    => env('ORDER_SERVICE_URL'),
+        'notification'   => env('NOTIFICATION_SERVICE_URL'),
+        'apigateway'  => env('API_GATEWAYURL'),
     ],
 ];
