@@ -66,8 +66,6 @@ $desc = \Illuminate\Support\Str::limit(strip_tags($description), 160, '');
 </head>
 
 <body class="antialiased">
-    <x-TopBar />
-    <x-Navbar />
     {{ $slot }}
 
     @stack('scripts')
